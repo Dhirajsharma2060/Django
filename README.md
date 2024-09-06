@@ -17,3 +17,21 @@ Make sure you have the following installed:
 ```bash
 git clone <https://github.com/Dhirajsharma2060/Django>
 cd <tweet>
+# On Windows
+python -m venv myenv
+
+# On MacOS/Linux
+python3 -m venv myenv
+
+# On Windows
+myenv\Scripts\activate
+
+# On MacOS/Linux
+source myenv/bin/activate
+# Qucik  setup
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+
+
+
