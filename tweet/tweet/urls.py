@@ -22,6 +22,9 @@ from django.contrib.auth.urls import views as auth_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    # Make tweetup app the landing page (root URL)
+    path('', include('tweetup.urls')),  # Root URL points to tweetup
     path('tweetup/', include('tweetup.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
 
