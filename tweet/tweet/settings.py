@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'tweet.wsgi.application'
 load_dotenv()
 # Database configuration
 DATABASE_URL = os.getenv('DATABASE_URL')
-#DATABASE_URL='postgres://postgres.zluouxldllmujuhokdvo:dhiraj2060502@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres'
+
 
 DATABASES = {
     'default': dj_database_url.parse(DATABASE_URL, conn_max_age=600)
