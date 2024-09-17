@@ -133,3 +133,15 @@ STATICFILES_ROOT = [os.path.join(BASE_DIR, 'static')]
 LOGIN_URL='/accounts/login'
 LOGIN_REDIRECT_URL='/tweetup/'
 LOGOUT_REDIRECT_URL='/tweetup/'
+
+
+# Email Backend configuration (Gmail example)
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'dhirajproject60@gmail.com'  # Your email address
+EMAIL_HOST_PASSWORD = 'pnmr ilof uzbz zysx'  # Your email password (use environment variables for security in production)
+
+# Default from email address
+#DEFAULT_FROM_EMAIL = 'webmaster@yourdomain.com'
